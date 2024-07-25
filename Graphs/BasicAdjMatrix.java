@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// Implementing graph-1.png
 public class BasicAdjMatrix {
     public static void main(String[] args) {
         int v = 5;
-        int sourceVertex = 2;
-        ArrayList<ArrayList<Integer>> graph= new ArrayList<ArrayList<Integer>>(v);
+        int sourceVertex = 0;
+        ArrayList<ArrayList<Integer>> graph= new ArrayList<>(v); // if you actual names for nodes, we will use hashmap to store integer to string reference
         for(int i = 0; i < v; i++){
             graph.add(new ArrayList<Integer>());
         }
@@ -30,7 +31,7 @@ public class BasicAdjMatrix {
         for(int i = 0; i < v; i++){
             System.out.println(i + " - " + graph.get(i).toString());
         }
-        System.out.println("Degree of vertex 2 is " + findDegree(graph, 2));
+        System.out.println("Degree of vertex 2 is " + findDegree(graph, 0));
         System.out.println("BFS nodes from source vertex " + sourceVertex + " is\n");
         printBfs(graph, sourceVertex);
     }

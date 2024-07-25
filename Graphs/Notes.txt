@@ -1,0 +1,10 @@
+# Graphs
+M node Graph can be implemented in 2 ways in Java Using
+1. M*M - Matrix
+2. Adjacency List
+
+0 -> 1-2
+1 -> 0-2-4
+2 -> 0-1-3-4
+3 -> 2-4
+4 -> 1-2-3
